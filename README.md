@@ -1,3 +1,18 @@
+🚀 Just built TaskFlow API — a task management backend for teams, from scratch.
+
+Tech stack:
+🔹 FastAPI + PostgreSQL for the core API and data layer
+🔹 JWT authentication with bcrypt password hashing
+🔹 AWS S3 for file attachments (with presigned URLs — no files stored on the server)
+🔹 Alembic for versioned database migrations
+🔹 Docker for local dev, deployed on AWS RDS + EC2
+
+A few things I focused on beyond "just making it work":
+✅ Ownership-based access control (not just login checks — actual authorisation logic)
+✅ Automated tests using an in-memory database
+✅ A real AWS deployment path, not just localhost
+# #Python #FastAPI #AWS #PostgreSQL #BackendDevelopment #WebDevelopmen
+
 # TaskFlow API
 
 An intermediate-level project/task management API built with **FastAPI**, **PostgreSQL**
