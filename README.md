@@ -1,8 +1,23 @@
-# taskflow-apitaskflow-api
 # TaskFlow API
 
-An intermediate-level project/task management API built with **FastAPI**, **PostgreSQL**
-(via SQLAlchemy + Alembic), and **AWS** (RDS + S3 + EC2/Elastic Beanstalk).
+A REST API for team task management, built with **FastAPI** and **PostgreSQL**,
+featuring JWT authentication, relational data modeling, and AWS S3 file storage,
+deployed on AWS RDS + EC2.
+
+## Main task
+
+This project gives teams a backend to manage projects and tasks together —
+with secure accounts, structured relational data, and file attachments
+stored properly in the cloud instead of on the server. Specifically, it
+handles:
+
+1. **User management** — register/log in securely (JWT + hashed passwords)
+2. **Project organization** — each user creates and owns projects
+3. **Task tracking** — tasks live inside projects, with status, priority,
+   due dates, and an assignee
+4. **File attachments** — attach files to a task, stored in AWS S3
+5. **Access control** — only the right people can view or edit a given
+   project or task
 
 ## What it does
 
